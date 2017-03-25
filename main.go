@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 
@@ -8,9 +9,19 @@ import (
 )
 
 func main() {
+	var (
+		reset bool
+	)
+	flag.BoolVar(&reset, "reset", false, "reset all the buttons on the launchpad")
+	flag.Parse()
+
 	lp, err := launchpad.Open()
 	if err != nil {
 		log.Fatal(err)
+	}
+	if reset {
+		_ = lp.Reset()
+		return
 	}
 	hits, err := lp.Hits()
 	if err != nil {
