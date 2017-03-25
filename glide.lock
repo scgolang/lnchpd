@@ -1,0 +1,10 @@
+hash: 1a11045e177d43df0c2476b43a81de3a00b41b64d02b7d55767212c7a5d05fe1
+updated: 2017-03-25T08:49:38.990667671-05:00
+imports:
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/scgolang/launchpad
+  version: a2e9ec7c48a21060644d308c81ce3c7c8985a83b
+- name: github.com/scgolang/midi
+  version: dfadd4211cf395fe7f15c3e2f5107b95df17f3f3
+testImports: []

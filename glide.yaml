@@ -1,0 +1,4 @@
+package: github.com/scgolang/lnchpd
+import:
+- package: github.com/scgolang/launchpad
+  version: ^0.1.3
